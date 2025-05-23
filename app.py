@@ -18,7 +18,7 @@ ps= PorterStemmer()
 
 def transform_text(text):
     text = text.lower()
-    text = word_tokenize(text)
+    text = word_tokenize(text, language='english')
 
     y = []
     for i in text:
